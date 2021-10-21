@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./main.css">
+  
+  
+</head>
+
+<body>
+  
+  <div class="hero-pg">
+    
+    <img src="./images/logo.svg" alt="" id="logo">
+    <div class="hero">
+   <h1>A history of everything you copy</h1>
+   <p id="opacity">Clipboard allows you to track and organize everything you copy. Instantly acces your clipboard on all your devices</p>
+   <ul id="download">
+     <li id="iOS" class="btn"><a href="#"> Download for iOS</a></li>
+     <li id="Mac" class="btn"><a href=""> Download for Mac</a></li>
+   </ul>
+  </div>
+
+  
+  </div>
+
+ <div class="down">
+
+  <div class="track">
+    <h2>Keep track of your snippets</h2>
+    <p id="opacity">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+    </div>
+
+    <div class="flex">
+  <img src="./images/image-computer.png" id="img" alt="">
+
+  <ul class = "quick" id="quick">
+    <li><h3>Quick Search</h3> <span>Easily search your snippets by content category, web address, application, and more.</span></li>
+    <li><h3>iCloud Sync</h3><span>Instantly saves and syncs snippets across all your devices</span></li>
+    <li><h3>Complete History</h3><span>Retrieve any snippets from the first moment you started using their app.</span></li>
+  </ul>
+  </div>
+
+ </div>
+
+  <div class="access">
+    <h2>Access Clipboard Anywhere</h2>
+    <p id="opacity">Whether you're on the go, or at your computer you can access all your Clipboard snippets in a few simple clicks</p>
+    <img src="./images/image-devices.png" alt="">
+  </div>
+
+  
+    
+    <div class="supercharge">
+      <h2>Supercharge your workflow</h2>
+      <p id="opacity">We've got the tools to boost your productivity</p>
+    </div>
+
+    <div class="second-pg">
+    <div class="box black-lists">
+      <img src="./images/icon-blacklist.svg" alt="">
+      <h3>Create blacklists</h3>
+      <p id="opacity">Ensure sensitive information never makes its way to your clipboard by including certain sources.</p>
+    </div>
+
+    <div class="box plain-text">
+      <img src="./images/icon-text.svg" alt="">
+      <h3>Plain text snippets</h3>
+      <p id="opacity">Remove unwanted formatting from copied text for a consistent look.</p>
+    </div>
+
+    <div class="box sneak-preview">
+      <img src="./images/icon-preview.svg" alt="">
+      <h3>Sneak preview</h3>
+      <p id="opacity">Quick preview of all snippets on your Clipboard for easy access</p>
+    </div>
+    </div>
+
+    <div class="brands"><ul>
+      <li><img src="./images/logo-google.png" alt=""></li>
+      <li><img src="./images/logo-ibm.png" alt=""></li>
+      <li><img src="./images/logo-microsoft.png" alt=""></li>
+      <li><img src="./images/logo-hp.png" alt=""></li>
+      <li><img src="./images/logo-vector-graphics.png" alt=""></li>
+    </ul>
+    </div>
+
+    <div class="above-footer">
+      <h2>Clipboard for iOS and Mac OS</h2>
+      <p id="opacity">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</p>
+      <ul id="download">
+        <li id="iOS"><a href="">Download for iOS</a></li>
+        <li id="Mac"><a href="">Download for Mac</a></li>
+      </ul>
+    </div>
+  
+
+  <footer>
+    <img src="./images/logo.svg" alt="" height="80" width="80" >
+    <ul class="footer">
+      <li>FAQs</li>
+      <li>Contact Us</li>
+      <li>Privacy Policy</li>
+      <li>Press Kit</li>
+      <li>Install Guide</li>
+    </ul>
+
+    <div class="media">
+      <img src="./images/icon-facebook.svg" alt="">
+      <img src="./images/icon-twitter.svg" alt="">
+      <img src="./images/icon-instagram.svg" alt="">
+    </div>
+
+  </footer>
+
+
+
+
+</body>
+
+
+</html>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+/* font-family: 'Bai Jamjuree', sans-serif;*/ 
+
+
+
+
+body{
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url('./images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+}
+
+.hero-pg{
+    display: grid;
+    grid-template-columns: 8% auto 8%;
+    grid-template-rows: 250px 400px 100px;
+    position: relative;
+    
+
+}
+
+#logo{grid-column: 2;grid-row: 1; display: block; align-self: end; justify-self: center;}
+
+.hero{grid-column:2; grid-row: 2/3; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    
+    margin-top: 2em;
+    }
+h1{opacity: 80%;}
+
+a{text-decoration: none; color: white;}
+
+.btn:hover{opacity: 70%;}
+
+.hero p{opacity: 80%; font-size: 17px; line-height: 28px; }
+
+ul{list-style-type: none; margin-top: 3em;
+    display: flex; flex-wrap: wrap; 
+    
+padding-left: 0;
+ text-align: center; 
+ justify-content: center;
+gap: 15px;}
+
+#iOS{background-color:hsl(171, 66%, 44%);
+padding: 1em 0; border-radius: 2em; width: 300px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#Mac{background-color:hsl(233, 100%, 69%);
+    padding: 1em 0; border-radius: 2em; width: 300px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;}
+    
+
+
+.down{
+    display: flex;
+    flex-direction: column;
+}
+
+.track{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    text-align: center;
+    margin-bottom: 5em;
+    
+    
+}
+
+.track p {
+   width: 90%;
+   max-width: 610px;
+   align-self: center;
+}
+
+
+
+#opacity{
+    opacity: 80%;
+    line-height: 33px;
+}
+
+#img{
+   height: 100%;
+   width: 90%;
+   display: block;
+
+}
+
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    margin-bottom: 4em;
+    
+}
+
+#quick{
+    display: flex;
+    padding: 0 2.5em;
+    gap:3em;
+    flex-direction: column;
+    align-self: start;
+    margin-bottom: 2em;
+    line-height: 28px;
+}
+
+.access{
+    display: flex;
+    flex-direction: column;
+    padding:0 2em;
+    text-align: center;
+    margin-top: 10em;
+    align-items: center;
+}
+
+.access p{
+    width: 90%;
+    max-width: 610px;
+}
+
+
+
+.access img{
+    margin-top: 5em;
+    width: 100%;
+    max-width: 800px;
+    
+}
+
+span{opacity: 80%;}
+
+.supercharge{
+    text-align: center;
+    padding: 0 3em;
+    margin:8em 0;
+}
+
+.second-pg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+}
+
+.box{
+    width: 85%;
+    max-width: 400px;
+}
+
+.brands{margin-top: 10em;}
+
+.brands ul{
+    display:flex;
+    flex-direction: row;
+    padding-left: 0;
+    gap: 8em;
+}
+
+.brands ul li{
+    width:60%;
+    max-width: 150px;
+}
+
+
+.above-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10em;
+    padding: 0 2.6em;
+}
+
+.above-footer p{
+   width: 90%;
+   max-width: 730px;
+   align-self: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(0, 0%, 92%);
+    position: relative;
+    margin-top: 8em;
+}
+
+footer img{
+    padding:2em 0 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+}
+
+
+
+.footer li{
+    max-height: 10px;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    padding: 2em 0;
+    height: 100%;
+}
+
+
+
+
+@media (min-width:800px){
+    body{background-image: url('./images/bg-header-desktop.png');}
+    #img{max-width: 60%; margin-left: -8em;}
+    
+    #quick{text-align: left;
+        max-width: 35%;
+        gap: 3em;
+        line-height: 30px;
+    }
+
+    ul.quick li{padding-right: 10em;}
+
+    h1{font-size: 41px;}
+    h2{font-size: 37px;}
+    h3{font-size: 24px;}
+    p{font-size: 19px;}
+    footer{display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    padding-bottom: 2em;
+    
+
+}
+
+
+   .footer{
+       display: grid;
+       grid-template-columns: repeat(3, 150px);
+       grid-template-rows: 30px 30px;
+       grid-auto-flow: column;
+       grid-gap:20px 40px
+       
+
+}
+    
+
+
+}
+
+
+
+
+@media (min-width:1440px) {
+    .hero p{padding: 0 18em;}
+}
+
+
